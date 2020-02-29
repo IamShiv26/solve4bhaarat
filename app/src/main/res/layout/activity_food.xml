@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Food">
+
+    <TextView
+        android:id="@+id/Hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input Vitals"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40sp"
+        />
+    <TextView
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:text="Vital"
+        android:textSize="20sp"
+        android:layout_marginLeft="50sp"
+        android:layout_below="@id/Hello"
+        android:layout_marginTop="50sp"
+        android:id="@+id/name"
+        />
+
+    <Spinner
+        android:id="@+id/vital_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Hello"
+        android:textSize="20sp"
+        android:layout_marginTop="50sp"
+        android:layout_marginLeft="170sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Value"
+        android:textSize="20sp"
+        android:layout_below="@id/name"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="40sp"
+        android:id="@+id/display"
+        />
+
+    <EditText
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/vital_value"
+        android:layout_below="@id/vital_val"
+        android:layout_marginLeft="170sp"
+        android:layout_marginTop="30sp"
+        android:inputType="number"
+        />
+    <TextView
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="20sp"
+        android:layout_below="@id/display"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="40sp"
+        android:id="@+id/date"
+        />
+    <EditText
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_value"
+        android:layout_below="@id/vital_value"
+        android:layout_marginLeft="170sp"
+        android:layout_marginTop="25sp"
+        android:inputType="none"
+        />
+    <TextView
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textSize="20sp"
+        android:layout_below="@id/date"
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="40sp"
+        android:id="@+id/time"
+        />
+    <EditText
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/time_value"
+        android:layout_below="@id/date_value"
+        android:layout_marginLeft="170sp"
+        android:layout_marginTop="25sp"
+        android:inputType="none"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:id="@+id/save"
+        android:layout_alignParentBottom="true"
+        android:text="SAVE AND CONTINUE"
+        android:background="@color/orange"
+        />
+
+</RelativeLayout>
